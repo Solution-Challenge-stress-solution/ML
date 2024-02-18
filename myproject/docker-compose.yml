@@ -1,0 +1,15 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: C:\\Users\\82109\\BackEnd
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+
+  ml_server:
+    build:
+      context: C:\\Users\\82109\\gRPC\\myproject
+      dockerfile: Dockerfile
+    ports:
+      - "65534:65534"
