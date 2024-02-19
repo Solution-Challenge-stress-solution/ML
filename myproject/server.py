@@ -60,7 +60,7 @@ class MyMLModelServicer(message_pb2_grpc.MyMLModelServicer):
         return message_pb2.PredictReply(emotions=emotions, max_emotion=max_emotion, stress_index=stress_index_str)
 
 def serve():
-    port = os.getenv('PORT', '8080')  # PORT 환경 변수를 사용하도록 수정
+    port = os.getenv('PORT', '12345')  # PORT 환경 변수를 사용하도록 수정
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
     message_pb2_grpc.add_MyMLModelServicer_to_server(MyMLModelServicer(), server)
     server.add_insecure_port(f'[::]:{port}')

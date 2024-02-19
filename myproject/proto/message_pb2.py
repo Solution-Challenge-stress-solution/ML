@@ -14,7 +14,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rmessage.proto\x12\x0cyour_package\"D\n\x07\x45motion\x12\r\n\x05label\x18\x01 \x01(\t\x12\x13\n\x0bprobability\x18\x02 \x01(\x02\x12\x15\n\remotion_index\x18\x03 \x01(\t\"\x1f\n\x0ePredictRequest\x12\r\n\x05\x61udio\x18\x01 \x01(\x0c\"y\n\x0cPredictReply\x12\'\n\x08\x65motions\x18\x01 \x03(\x0b\x32\x15.your_package.Emotion\x12*\n\x0bmax_emotion\x18\x02 \x01(\x0b\x32\x15.your_package.Emotion\x12\x14\n\x0cstress_index\x18\x03 \x01(\t2R\n\tMyMLModel\x12\x45\n\x07Predict\x12\x1c.your_package.PredictRequest\x1a\x1a.your_package.PredictReply\"\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rmessage.proto\x12\x0cyour_package\"D\n\x07\x45motion\x12\r\n\x05label\x18\x01 \x01(\t\x12\x13\n\x0bprobability\x18\x02 \x01(\x02\x12\x15\n\remotion_index\x18\x03 \x01(\t\"0\n\x0ePredictRequest\x12\r\n\x05\x61udio\x18\x01 \x01(\x0c\x12\x0f\n\x07\x64iaryId\x18\x02 \x01(\x03\"y\n\x0cPredictReply\x12\'\n\x08\x65motions\x18\x01 \x03(\x0b\x32\x15.your_package.Emotion\x12*\n\x0bmax_emotion\x18\x02 \x01(\x0b\x32\x15.your_package.Emotion\x12\x14\n\x0cstress_index\x18\x03 \x01(\t2R\n\tMyMLModel\x12\x45\n\x07Predict\x12\x1c.your_package.PredictRequest\x1a\x1a.your_package.PredictReply\"\x00\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -24,9 +24,9 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _globals['_EMOTION']._serialized_start=31
   _globals['_EMOTION']._serialized_end=99
   _globals['_PREDICTREQUEST']._serialized_start=101
-  _globals['_PREDICTREQUEST']._serialized_end=132
-  _globals['_PREDICTREPLY']._serialized_start=134
-  _globals['_PREDICTREPLY']._serialized_end=255
-  _globals['_MYMLMODEL']._serialized_start=257
-  _globals['_MYMLMODEL']._serialized_end=339
+  _globals['_PREDICTREQUEST']._serialized_end=149
+  _globals['_PREDICTREPLY']._serialized_start=151
+  _globals['_PREDICTREPLY']._serialized_end=272
+  _globals['_MYMLMODEL']._serialized_start=274
+  _globals['_MYMLMODEL']._serialized_end=356
 # @@protoc_insertion_point(module_scope)

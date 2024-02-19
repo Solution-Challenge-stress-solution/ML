@@ -10,6 +10,7 @@ message Emotion {
 
 message PredictRequest {
     bytes audio = 1;
+    int64 diaryId = 2;
 }
 
 message PredictReply {
